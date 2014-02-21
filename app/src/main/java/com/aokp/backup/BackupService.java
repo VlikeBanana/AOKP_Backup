@@ -110,7 +110,7 @@ public class BackupService extends IntentService {
             final String path = intent.getStringExtra("path");
 
             Notification notification = new NotificationCompat.Builder(BackupService.this)
-                    .setContentTitle("AOKP Backup")
+                    .setContentTitle("VU Backup")
                     .setContentText("Restore in progress...")
                     .setOngoing(true)
                     .setSmallIcon(R.drawable.ic_noti_backup_complete)
@@ -140,7 +140,7 @@ public class BackupService extends IntentService {
                     Log.d(TAG, "no su commands for restore. restore good.");
                 }
             } catch (Exception e) {
-                Log.d(TAG, "Restore failed!!!!!", e);
+                Log.d(TAG, "Restore failed :( !!! ", e);
                 result = false;
             } finally {
                 FileUtils.deleteQuietly(
@@ -240,7 +240,7 @@ public class BackupService extends IntentService {
 
     private void showOngoingNotification() {
         mNotification = new NotificationCompat.Builder(this)
-                .setContentTitle("AOKP Backup")
+                .setContentTitle("VU Backup")
                 .setContentText("Backup in progress...")
                 .setOngoing(true)
                 .setSmallIcon(R.drawable.ic_noti_backup_complete)
