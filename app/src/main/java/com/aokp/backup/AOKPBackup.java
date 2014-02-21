@@ -1,4 +1,3 @@
-
 package com.aokp.backup;
 
 import android.app.Application;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class AOKPBackup extends Application {
 
-    static final String TAG = "AOKP Backup";
+    static final String TAG = "VU Backup";
 
     List<Backup> mBackups;
 
@@ -60,7 +59,7 @@ public class AOKPBackup extends Application {
         if (Tools.getAOKPGooVersion() > 0) {
             return true;
         }
-        if (Tools.getROMVersion().contains("aokp")) {
+        if (Tools.getROMVersion().contains("vu")) {
             return true;
         } else {
             Log.e(TAG, "ROM version: " + Tools.getROMVersion());
