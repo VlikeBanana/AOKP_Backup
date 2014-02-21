@@ -6,11 +6,11 @@ android {
     compileSdkVersion 18
     buildToolsVersion "18.0.1"
 
-    project.archivesBaseName = "AOKP_Backup"
+    project.archivesBaseName = "VU_Backup"
 
     defaultConfig {
         versionCode 48
-        versionName "2.2.3"
+        versionName "1.0"
         minSdkVersion 15
         targetSdkVersion 18
     }
